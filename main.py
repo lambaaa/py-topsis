@@ -13,8 +13,8 @@ def index():
 
 @app.route('/sonuc')
 def get_hesap():
-    city = request.args.get('city')
-    ##ekrandan al verileri
+    weights = np.array(request.array.get('wg'))
+    ##choices = request.args.get('choices')
 
     evaluation_matrix = np.array([
     [1,2,3,4],
@@ -31,7 +31,6 @@ def get_hesap():
         status = "best_distance\t"+str(t.best_distance),
         temp = "worst_distance\t"+str(t.worst_distance)
     )
-
 
 if __name__ == "__main__":
     serve(app, host="0.0.0.0", port=8000)
