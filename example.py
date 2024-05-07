@@ -29,3 +29,5 @@ print("rank_to_worst_similarity\t", t.rank_to_worst_similarity())
 
 print("best_similarity\t", t.best_similarity)
 print("rank_to_best_similarity\t", t.rank_to_best_similarity())
+
+print("asd\t", t.normalized_decision)

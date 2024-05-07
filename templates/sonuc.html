@@ -9,12 +9,39 @@
 </head>
 
 <body>
-    <h1>Sonuc</h1>
-    <p>{{ status }} and {{ temp }}</p>
-    <form action="/sonuc">
-        <input type="text" name="city" id="city" placeholder="enter a city" />
-        <button type = "submit">Submit</button>
-    </form>
+    <h1>Adım 1</h1>
+    <div>
+        <pre>{{ step1 }}</pre>
+    </div>
+    <h1>Adım 2</h1>
+    <div>
+        <pre>{{ step2 }}</pre>
+    </div>
+    <h1>Adım 3</h1>
+    <div>
+        <pre>{{ step3 }}</pre>
+    </div>
+    <h1>Adım 4 </h1>
+    <div>
+        <p>ideal negatif</p>
+        <pre>{{ step4worst }}</pre>
+        <p>ideal pozitif</p>
+        <pre>{{ step4best }}</pre>
+    </div>
+    <h1>Adım 5 </h1>
+    <div>
+        <p>S-</p>
+        <pre>{{ step5worstdist }}</pre>
+        <p>S*</p>
+        <pre>{{ step5bestdist }}</pre>
+    </div>
+    <h1>Adım 6 </h1>
+    <div>
+        <p>Ci-</p>
+        <pre>{{ step6worstsim }}</pre>
+        <p>Ci*</p>
+        <pre>{{ step6bestsim }}</pre>
+    </div>
 </body>
 
 </html>
