@@ -27,7 +27,7 @@ class Topsis():
 
         # N size weight matrix
         self.weight_matrix = np.array(weight_matrix, dtype="float")
-        ##self.weight_matrix = self.weight_matrix/sum(self.weight_matrix)
+        self.weight_matrix = self.weight_matrix/sum(self.weight_matrix)
         self.criteria = np.array(criteria, dtype="float")
 
     '''

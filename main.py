@@ -31,7 +31,7 @@ def get_hesap():
     [52,8,5,6],
     [51,8,7,7],
     ])
-    weights = np.array([0.2, 0.3, 0.2, 0.1])
+    weights = np.array([4, 3, 2, 1])
     ##weights = [5, 5, 9, 0]
     ##weights = [123.12, 18.92, 14.14, 18.52]
     criterias = np.array([False, True, False, True])
@@ -73,7 +73,9 @@ def get_hesap():
         step5bestdist = "\t"+str(t.best_distance),
 
         step6worstsim = "\t"+str(t.worst_similarity),
-        step6bestsim = "\t"+str(t.best_similarity)
+        step6bestsim = "\t"+str(t.best_similarity),
+
+        ranked = "\t"+str(t.rank_to_best_similarity())
     )
 
 if __name__ == "__main__":
